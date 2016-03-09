@@ -1,0 +1,103 @@
+﻿.buttonRoom {
+    -webkit-border-radius: inset 0 0 20px;
+    -webkit-box-shadow: inset #09f 0 0 10px;
+    center center no-repeat !important;
+    background-size: 50% !important;
+    margin: 10 0px 0 0 width: 105px;
+    -webkit-border-radius: 30px;
+    font-size: 12px;
+}
+
+.roundButtonManual {
+    -webkit-box-shadow: inset #09f 0 0 20px;
+    center no-repeat !important;
+    background-size: 50% !important;
+    margin: 10px 0px 0 0;
+    text-align: center;
+    height: 30px;
+    width: 45px;
+    font-size: 12px;
+    -webkit-border-radius: 50px;
+}
+
+.roundButtonOff {
+    -webkit-box-shadow: inset #020E17 0 0 20px;
+    center no-repeat !important;
+    background-size: 50% !important;
+    margin: 10px 0px 0 0;
+    text-align: center;
+    height: 30px;
+    width: 45px;
+    font-size: 12px;
+    -webkit-border-radius: 50px;
+}
+
+.roundButtonAuto {
+    -webkit-box-shadow: inset #10FF00 0 0 20px;
+    center no-repeat !important;
+    background-size: 50% !important;
+    margin: 10px 0px 0 0;
+    text-align: center;
+    height: 30px;
+    width: 45px;
+    font-size: 12px;
+    -webkit-border-radius: 50px;
+}
+
+.roundMiniButton {
+    -webkit-box-shadow: inset #51E020 2px 0px 1px 1px;
+    background-size: 50% !important;
+    margin: 10px 0px 0 0;
+    text-align: center;
+    height: 14px;
+    width: 8px;
+    -webkit-border-radius: 20px;
+    font-size: 10px;
+}
+
+.textInputSettings {
+    border-width: 2px;
+    border-color: green;
+}
+
+.miniButtonSettings {
+    float: left;
+    margin-right: 5px;
+}
+
+.uigridRooms {
+    height: 65px;
+    background-color: #C6CDD2;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 3px;
+}
+
+.current {
+    background-color: lightseagreen;
+    -webkit-box-shadow: inset #085E1D 0 0 10px;
+    font-size: 12px;
+    -webkit-border-radius: 80px 80px 0px 0px;
+    height: 66px;
+    width: 100%;
+}
+
+.target {
+    background-color: lightblue;
+    -webkit-box-shadow: inset #085E1D 0 0 10px;
+    font-size: 12px;
+    -webkit-border-radius: 0px 0px 80px 80px;
+    height: 66px;
+    width: 100%;
+}
+
+.textcolor {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.containing-element .ui-slider-switch {
+    width: 10em;
+}
+
+

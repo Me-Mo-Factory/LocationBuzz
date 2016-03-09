@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memo</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link href="css/jquery.mobile.flatui.css" rel="stylesheet" />
+    <link href="css/autonomik.css" rel="stylesheet" />
+    <script src="js/Weather.js"></script>
+    <script src="js/Memo.js"></script>
+    <script src="js/buzz.js"></script>
+    <script src="js/jquery.vibrate.js"></script>
+    <script src="js/SimpleWeather.js"></script>
+    <link href="css/weather.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&sensor=false">  </script>
+    <script>
+        // Wait for Cordova to load
+        //
+        document.onDeviceReady("deviceready", onDeviceReady, false);
+
+        // Cordova is ready
+        //
+        function onDeviceReady() {
+            localStorage.setItem("key", "Memo");
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+    <div id="home" data-role="page" data-theme="a" data-cache="false">
+        <div data-role="header">
+
+            <div align="center">
+                <img src="img/Memo.png" style="height: 55px; width: 70px;" />
+            </div>
+            <!--<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>-->
+
+            <a href="#mypanel" data-icon="bars" data-iconpos="notext"></a>
+
+            <!--<a href="#logout" data-icon="action" title="Logout" id="logout" data-iconpos="notext"></a>-->
+
+
+        </div>
+
+        <!--Header-->
+
+        <div role="main" class="ui-content">
+
+            <div data-role="navbar" style="padding-bottom: 2px;">
+                <div class="ui-grid-b">
+                    <div id="MyMapLOC" class="ui-block-b" style="height: 100px; width: 100px; display: none;" align="center" ></div>
+                    <div class="ui-block-b" style="height: 100%; width: 100%;" align="center"><a class="ui-btn buttonRoom" id="btnStoreLocation" style="height: 30px; width: 200px;">Store Location</a></div>
+                    <div id="dvAddress" class="ui-block-b" style="height: 100%; width: 100%; display: none;" align="center">Address:</div>
+                    <div class="ui-block-b" style="height: 100%; width: 100%;" align="center"><a class="ui-btn buttonRoom" id="btnAlarm" style="height: 30px; width: 200px;">Set Alarm</a></div>
+                    <div id="dvDistance" class="ui-block-b" style="height: 100%; width: 100%; display: none;" align="center">Distance
+                        <input type="button" class="ui-btn buttonRoom" id="btnVibrate" style="width: 0px; height: 0px; display: none;"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-position="fixed" data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-icon="gear" id="lnkUserSettings" data-transition="flip">User Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memo</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Page: subpage  -->
+    <div id="usersettings" data-role="page" data-theme="a" style="background-color:lightgrey;">
+        <div data-role="header" data-position="fixed">
+            <h3>User Settings</h3>
+            <a href="#mypanel" data-icon="bars" data-iconpos="notext"></a>
+            <!--<a href="#logout" data-icon="action" title="Logout" id="logout" data-iconpos="notext"></a>-->
+        </div>
+        <div data-role="content">
+            <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <input type="text" placeholder="Location" style="border:dotted;border-width: 2px;border-color: green;" value="" name="location" id="location" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <input type="text" placeholder="Notification Email" style="border:dotted;border-width: 2px;border-color: green;" value="" name="email" id="email" />
+                    </div>
+                    <div class="miniButtonSettings"><a class="ui-btn buttonRoom" id="submit" style="width:70px;">Submit</a></div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div data-position="fixed" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-icon="home" href="#home">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
